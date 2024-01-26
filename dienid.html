@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABEL</title>
+    <style>
+        .blue{
+            background-color: blue;
+            border: 3px solid black;
+        }
+        .red{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .green{
+            background-color: green;
+            border: 3px solid black;
+        }
+        table{
+            
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 3px solid black;
+            text-align: center;
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(54, 207, 49);
+        }
+        .prvni{
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup class="prvni">
+            <col span="5">
+        </colgroup>
+        <col span="4">
+        <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>EEEEEEEEEEEEEE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>I.</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>II.</th>
+                <td class="blue" colspan="2">5</td>
+                <td class="red" rowspan="2">6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <th>III.</th>
+                <td class="green" colspan="2" rowspan="2">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <th>IV.</th>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
