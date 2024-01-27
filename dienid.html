@@ -17,15 +17,17 @@
             background-color: green;
             border: 3px solid black;
         }
-        table{
+        .table1{
             
             border-collapse: collapse;
+            margin-bottom: 2em;
         }
-        th, td{
+        .th1, .td1{
             border: 3px solid black;
             text-align: center;
+            
         }
-        tbody tr:nth-child(odd){
+        .tbody1 tr:nth-child(odd){
             background-color: rgb(54, 207, 49);
         }
         .prvni{
@@ -34,44 +36,229 @@
     </style>
 </head>
 <body>
-    <table>
+    <table class="table1">
         <colgroup class="prvni">
-            <col span="5">
+            <col>
         </colgroup>
-        <col span="4">
         <thead>
             <tr>
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>
-                <th>D</th>
-                <th>EEEEEEEEEEEEEEE</th>
+                <th class="th1">A</th>
+                <th class="th1">B</th>
+                <th class="th1">C</th>
+                <th class="th1">D</th>
+                <th class="th1">E</th>
+            </tr>
+        </thead>
+        
+        <tbody class="tbody1">
+            <tr>
+                <th class="th1">I.</th>
+                <td class="td1">1</td>
+                <td class="td1">2</td>
+                <td class="td1">3</td>
+                <td class="td1">5</td>
+            </tr>
+            <tr>
+                <th class="th1">II.</th>
+                <td class="blue td1" colspan="2">5</td>
+                <td class="red td1" rowspan="2">6</td>
+                <td class="td1">7</td>
+            </tr>
+            <tr>
+                <th class="th1">III.</th>
+                <td class="green td1" colspan="2" rowspan="2">8</td>
+                <td class="td1">9</td>
+            </tr>
+            <tr>
+                <th class="th1">IV.</th>
+                <td class="td1">10</td>
+                <td class="td1">11</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <style>
+        .table2{
+            border-collapse: collapse;
+
+        }
+        .tr2 th, td{
+            border: 3px solid black;
+            text-align: center;
+            
+        }
+        .tr3 th, td{
+            border: 3px solid black;
+            text-align: center;
+            
+        }
+        .tr2 th{
+            background-color: rgb(70, 70, 200)
+        }
+        .tr2 td{
+            background-color: salmon;
+        }
+        .tr3 th{
+            background-color: rgb(70, 70, 200)
+        }
+        .tr3 td{
+            background-color: antiquewhite;
+        }
+        .invisible{
+            color:transparent;
+            
+        }
+    </style>
+    <table class="table2">
+        <thead>
+
+            <tr class="tr2">
+                <th></th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th>I.</th>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>5</td>
+            <tr class="tr2">
+                <th rowspan="6 ">Po</th>
+                <td   rowspan="6"></td>
+                <td  rowspan="3" colspan="2">TED1</td>
+                
+                <td rowspan="6">MAT</td>
+                <td  rowspan="3">ANJ1</td>
+                <td rowspan="6">ČJL</td>
+                <td   rowspan="6"></td>
+                <td rowspan="6">ZSV</td>
+                <td  rowspan="3" colspan="2">L: ZAL1</td>
+                
             </tr>
-            <tr>
-                <th>II.</th>
-                <td class="blue" colspan="2">5</td>
-                <td class="red" rowspan="2">6</td>
-                <td>7</td>
+            <tr class="tr2">
             </tr>
-            <tr>
-                <th>III.</th>
-                <td class="green" colspan="2" rowspan="2">8</td>
-                <td>9</td>
+            <tr class="tr2">
             </tr>
-            <tr>
-                <th>IV.</th>
-                <td>10</td>
-                <td>11</td>
+            <tr class="tr2">
+                <td rowspan="3" colspan="2">TED2</td>
+                
+                <td  rowspan="3">NEJ2</td>
+                <td  rowspan="3" colspan="2">S: ZAL2</td>
+                
             </tr>
+            <tr class="tr2">
+            </tr>
+            <tr class="tr2">
+            </tr>
+
+            <tr class="tr3">
+                <th rowspan="6 ">Út</th>
+                <td class="invisible"  rowspan="6"></td>
+                <td  rowspan="3">ANJ1</td>
+                <td  rowspan="6">CHE</td>
+                <td rowspan="2" colspan="3">PRA1</td>
+                <td  rowspan="6">ZAE</td>
+                <td  rowspan="6">FYZ</td>
+                <td class="invisible"  rowspan="6"></td>
+                <td class="invisible"  rowspan="6"></td>
+            </tr>
+            <tr class="tr3">
+            </tr>
+            <tr class="tr3">
+                <td rowspan="2" colspan="3">PRA2</td>
+            </tr>
+            <tr class="tr3">
+                <td rowspan="3">NEJ2</td>
+            </tr>
+            <tr class="tr3">
+                <td rowspan="2" colspan="3">PRA3</td>
+            </tr>
+            <tr class="tr3">
+            </tr>
+
+            <tr class="tr2">
+                <th rowspan="6 ">St</th>
+                <td class="invisible"  rowspan="6">........</td>
+                <td  rowspan="3">ANJ2</td>
+                <td  rowspan="6">ZAL</td>
+                <td  rowspan="6">ČJL</td>
+                <td  rowspan="6">FYZ</td>
+                <td  rowspan="6">MAT</td>
+                <td  rowspan="6">ZAE</td>
+                <td class="invisible"  rowspan="6"></td>
+                <td  rowspan="3" colspan="2">L: ZAL2</td>
+                
+            </tr>
+            <tr class="tr2">
+            </tr>
+            <tr class="tr2">
+            </tr>
+            <tr class="tr2">
+                <td rowspan="3">NEJ1</td>
+                <td  rowspan="3" colspan="2">S: ZAL1</td>
+                
+            </tr>
+            <tr class="tr2"> 
+            </tr>
+            <tr class="tr2">
+            </tr>
+
+            <tr class="tr3">
+                <th rowspan="6 ">Čt</th>
+                <td class="invisible"  rowspan="6"></td>
+                <td  rowspan="6">MAT</td>
+                <td  rowspan="6">ČJL</td>
+                <td  rowspan="6">IKT</td>
+                <td  rowspan="3" colspan="2">IKT1</td>
+                
+                <td  rowspan="6">ZAE</td>
+                <td  rowspan="6">ZSV</td>
+                <td class="invisible"  rowspan="6">........</td>
+                <td class="invisible"  rowspan="6">........</td>
+            </tr>
+            <tr class="tr3">
+            </tr>
+            <tr class="tr3">
+            </tr>
+            <tr class="tr3">
+                <td  rowspan="3" colspan="2">IKT2</td>
+                
+            </tr>
+            <tr class="tr3"> 
+            </tr>
+            <tr class="tr3">
+            </tr>
+
+            <tr class="tr2">
+                <th rowspan="6 ">Pá</th>
+                <td class="invisible"  rowspan="6"></td>
+                <td  rowspan="3">ANJ2</td>
+                <td  rowspan="6">CHE</td>
+                <td  rowspan="6">TEV</td>
+                <td  rowspan="6">TEV</td>
+                <td class="invisible"  rowspan="6"></td>
+                <td  rowspan="6">MAT</td>
+                <td class="invisible"  rowspan="6"></td>
+                <td class="invisible"  rowspan="6"></td>
+                <td class="invisible"  rowspan="6"></td>
+            </tr>
+            <tr class="tr2">
+            </tr>
+            <tr class="tr2">
+            </tr>
+            <tr class="tr2">
+                <td rowspan="3">NEJ1</td>
+            </tr>
+            <tr class="tr2"> 
+            </tr>
+            <tr class="tr2">
+            </tr>
+
         </tbody>
     </table>
 </body>
